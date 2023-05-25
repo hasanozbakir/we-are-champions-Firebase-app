@@ -1,0 +1,39 @@
+<!Doctype html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <title>We are the Champions</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="../assets/freddie.png" alt="" >
+            <h1>We are the Champions</h1>
+            <form id="new-endorsement-form" >
+                <textarea
+                    id="textarea-field"
+                    class="textarea-field"
+                    name="textarea-field"
+                    rows="5"
+                    aria-label="textarea-field"
+                    placeholder="Write your endorsement here" required ></textarea>
+                <div class="input-wrapper">
+                    <input id="input-id-from" type="text" size="8" placeholder="From" aria-label="input-from" required />
+                    <input id="input-id-to" type="text" size="8" placeholder="To" aria-label="input-to" required />
+                </div>
+                <button id="publish-btn" type="submit">Publish</button>
+            </form>
+        </div>
+        <div class="endorsement-container">
+            <h3>- Endorsements -</h3>
+            <div id="endorsement-list" class="endorsement-wrapper"></div>
+        </div>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
